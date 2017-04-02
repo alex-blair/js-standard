@@ -73,8 +73,6 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={3} textColor="primary" caps>Background</Heading>
-          <Heading size={4} textColor="secondary">Background</Heading>
-          <Text size={6} textColor="secondary">Standard text</Text>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={3} textColor="fifth" caps>The Rules</Heading>
@@ -87,6 +85,10 @@ export default class Presentation extends React.Component {
             <ListItem>No unused variables</ListItem>
             <Text textColor="white">No unused variabless<Image height={140} src={images.semicolon}/><Image height={200} src={images.apostrophe}/></Text>
           </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={3} textColor="tertiary" caps>Avantages</Heading>
+          <Heading size={4} textColor="secondary">Why you should use it</Heading>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" bgImage={images.golumn} bgDarken={0.7}>
           <Heading size={3} textColor="tertiary" padding="15px" caps>We wants it</Heading>
@@ -105,32 +107,18 @@ export default class Presentation extends React.Component {
           <Image display="block" height={100} src={images.snazzyscript} padding="15px"/>
         </Slide>
         <Slide transition={["fade"]} bgImage={images.glitter} bgDarken={0.4}>
-          <Heading size={3} textColor="primary" caps>Make it snazzy</Heading>
+          <Heading size={3} textColor="primary" padding="10px" caps>Make it snazzy</Heading>
           <Image display="block" height={500} src={images.snazzify}/>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={3} textColor="primary" caps>Some code</Heading>
-          <Heading size={4} textColor="secondary">Some code</Heading>
-          <Text size={6} textColor="secondary">Standard text</Text>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="primary">
-          <Heading size={3} textColor="tertiary" caps>Avantages</Heading>
-          <Heading size={4} textColor="secondary">Why you should use it</Heading>
-          <Text size={6} textColor="secondary">Standard text</Text>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>Standard List</Heading>
-          <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
-          </List>
+          <Heading size={3} textColor="primary" padding="10px" caps>There's no time</Heading>
+          <Heading size={4} textColor="secondary" padding="10px">Quick, fix my code</Heading>
+          <Image display="block" height={100} padding="10px" src={images.fixscript}/>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
+            <Quote>“I have found that it is the small things... that keep the darkness at bay."</Quote>
+            <Cite>J.R.R. Tolkien</Cite>
           </BlockQuote>
         </Slide>
       </Deck>
